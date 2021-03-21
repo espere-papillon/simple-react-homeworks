@@ -1,29 +1,32 @@
 .container {
     display: grid;
-    grid-template-columns: 50px 300px;
+    grid-template-columns: 100px 300px 50px 50px;
     align-items: end;
 }
 
 .message {
-    background: darkgreen;
+    background: slateblue;
     margin-left: 15px;
     border-radius: 10px;
-    padding: 10px 5px 5px 10px;
+    padding: 10px 5px 10px 10px;
     position: relative;
     width: 300px;
     margin-bottom: 10px;
+    grid-column: 2;
 }
 
-.message::before {
+.message::after {
     content: '';
     position: absolute;
-    left: -20px;
+    right: -20px;
     bottom: 0;
     border: 20px solid transparent;
-    border-bottom: 20px solid darkgreen;
-    /*transform: rotate(45deg);*/
+    border-bottom: 20px solid slateblue;
 }
 
+.ava {
+    grid-column: 4;
+}
 .ava img {
     width: 50px;
 }
@@ -44,7 +47,7 @@
 }
 
 .time {
-    color: seagreen;
+    color: navy;
     grid-column: 2;
     grid-row: 2/4;
     align-self: self-end;
