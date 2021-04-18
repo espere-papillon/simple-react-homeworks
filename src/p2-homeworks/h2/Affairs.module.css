@@ -75,3 +75,18 @@
 .filterElementList:focus {
     outline: none;
 }
+.sortElementList {
+    width: 7rem;
+    white-space: nowrap;
+    border-radius: 25%;
+    line-height: 2rem;
+    border: .25rem solid transparent;
+    text-align: center;
+    background-color: #727272;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+.sortElementList:focus {
+    outline: none;
+}

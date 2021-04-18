@@ -1,11 +1,12 @@
 import React from 'react'
-import {AffairType, AlternativeAffairType, FilterType} from "./HW2";
+import {AlternativeAffairType, FilterType, SortType} from "./HW2";
 import styles from "./Affairs.module.css";
 import AlternativeAffair from "./AlternativeAffair";
 
 type AlternativeAffairPropsType = {
     data: Array<AlternativeAffairType>
     setFilter: (filterAffairsValue: FilterType) => void
+    setSort: (sortAffairsValue: SortType) => void
     deleteAffairCallback: (affairID: number) => void
 }
 
@@ -20,6 +21,8 @@ function AlternativeAffairs(props: AlternativeAffairPropsType) {
             />
         </ul>
     ))
+    const setName = () => props.setSort('name')
+    const setDeadline = () => props.setSort('deadline')
 
     const setAll = () => props.setFilter('all')
     const setHigh = () => props.setFilter('high')
@@ -28,6 +31,8 @@ function AlternativeAffairs(props: AlternativeAffairPropsType) {
 
     return (
         <div>
+            <button className={styles.sortElementList} onClick={setName}>Name</button>
+            <button className={styles.sortElementList} onClick={setDeadline}>Deadline</button>
             {mappedAlternativeAffairs}
 
             <button className={styles.filterElementList} onClick={setAll}>All</button>
