@@ -1,3 +1,92 @@
-.someClass {
-
+.listCounter {
+    list-style: none;
+    counter-reset: list;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.elementList {
+    width: 20rem;
+    position: relative;
+    display: inline-block;
+    line-height: 2rem;
+    margin-left: 1.75rem;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: .25rem;
+}
+.deadlineList {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    line-height: 2rem;
+    margin-left: 1.75rem;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    color: #fff;
+    background-color: transparent;
+    white-space: nowrap;
+    border-radius: .25rem;
+}
+.numberList {
+    position: absolute;
+    left: -2rem;
+    top: -.25rem;
+    bottom: -.25rem;
+    width: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    border: .25rem solid #fff;
+    text-align: center;
+    color: #fff;
+}
+.deleteElementList {
+    width: 2.5rem;
+    height: 2.4rem;
+    white-space: nowrap;
+    border-radius: 25%;
+    line-height: 2rem;
+    border: .25rem solid transparent;
+    text-align: center;
+    background-color: #727272;
+    margin-left: .25rem;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+.deleteElementList:focus {
+    outline: none;
+}
+.filterElementList {
+    width: 5rem;
+    white-space: nowrap;
+    border-radius: 25%;
+    line-height: 2rem;
+    border: .25rem solid transparent;
+    text-align: center;
+    background-color: #727272;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+.filterElementList:focus {
+    outline: none;
+}
+.sortElementList {
+    width: 7rem;
+    white-space: nowrap;
+    border-radius: 25%;
+    line-height: 2rem;
+    border: .25rem solid transparent;
+    text-align: center;
+    background-color: #727272;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+.sortElementList:focus {
+    outline: none;
 }

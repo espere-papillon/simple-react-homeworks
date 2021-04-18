@@ -9,20 +9,22 @@
     display: inline-block;
     border-radius: 20px;
     position: relative;
-    margin-left: 130px;
-    box-shadow: 5px 5px 20px #727272;
+    box-shadow: -5px 5px 20px #727272;
+    right: 0;
+    margin-left: 300px;
+    margin-right: 30px;
 }
 .message::before, .message::after {
     content: '';
     position: absolute;
-    left: -23px;
+    right: -23px;
     bottom: 7px;
     border: 20px solid transparent;
     border-bottom: 20px solid #727272;
     transform: scaleY(1.5);
 }
 .message::after {
-    left: -17px;
+    right: -17px;
     bottom: 10px;
     border-bottom: 20px solid white;
     transform: scaleY(1.5);

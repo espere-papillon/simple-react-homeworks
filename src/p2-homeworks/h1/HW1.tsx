@@ -1,10 +1,23 @@
 import React from 'react'
+import Message from "./Message";
+import avatar1 from './image/ava1.jpg'
+import avatar2 from './image/ava2.jpg'
+import AlternativeMessage from './AlternativeMessage';
 
 const messageData = {
-    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
-    time: '22:00',
+    avatar: avatar1,
+    name: 'Mike',
+    message: 'Hello! ' +
+        'How are you?',
+    time: '22:52',
+}
+const alternativeMessageData = {
+    avatar: avatar2,
+    name: 'Nick',
+    message: 'Hello! ' +
+        'Not bad! ' +
+        'What about you?',
+    time: '23:45',
 }
 
 function HW1() {
@@ -15,16 +28,20 @@ function HW1() {
 
             {/*should work (должно работать)*/}
 
-            {/*<Message*/}
-            {/*    avatar={messageData.avatar}*/}
-            {/*    name={messageData.name}*/}
-            {/*    message={messageData.message}*/}
-            {/*    time={messageData.time}*/}
-            {/*/>*/}
+            <Message
+                avatar={messageData.avatar}
+                name={messageData.name}
+                message={messageData.message}
+                time={messageData.time}
+            />
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
+            <AlternativeMessage
+                avatar={alternativeMessageData.avatar}
+                name={alternativeMessageData.name}
+                message={alternativeMessageData.message}
+                time={alternativeMessageData.time}/>
             <hr/>
         </div>
     )

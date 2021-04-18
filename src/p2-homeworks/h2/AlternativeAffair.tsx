@@ -1,14 +1,14 @@
 import React from 'react'
-import {AffairType} from "./HW2";
+import {AlternativeAffairType} from "./HW2";
 import styles from './Affairs.module.css'
 
-type AffairPropsType = {
-    // key не нужно типизировать
-    affair: AffairType // need to fix any
+type AlternativeAffairPropsType = {
+    counter: number
+    affair: AlternativeAffairType // need to fix any
     deleteAffairCallback: (affairID: number) => void // need to fix any
 }
 
-function Affair(props: AffairPropsType) {
+function AlternativeAffair(props: AlternativeAffairPropsType) {
     const deleteCallback = () => props.deleteAffairCallback(props.affair._id)// need to fix
 
     const elementList = {
@@ -21,13 +21,14 @@ function Affair(props: AffairPropsType) {
     return (
         <>
             <li style={elementList} className={styles.elementList}>
-                <span style={numberList} className={styles.numberList}>{props.affair._id}</span>
+                <span style={numberList} className={styles.numberList}>{props.counter}</span>
                 <span className={styles.textList}>{props.affair.name}</span>
-                <span className={styles.deadlineList}>{props.affair.priority}</span>
+                <span className={styles.deadlineList}>{props.affair.deadline}</span>
+                {/*<span className={styles.priorityList}>{props.affair.priority}</span>*/}
             </li>
             <button className={styles.deleteElementList} onClick={deleteCallback}>X</button>
         </>
     )
 }
 
-export default Affair
+export default AlternativeAffair
