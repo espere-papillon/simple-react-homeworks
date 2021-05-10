@@ -1,7 +1,104 @@
-.checkbox {
-
+.checkboxLabel {
+    vertical-align: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: inherit;
+    color: #434343;
+    display: flex;
+    flex-direction: row;
+}
+.checkboxText {
+    display: inline-block;
+    vertical-align: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: inherit;
+    padding: 5px 0 0 10px;
+    color: #434343;
+}
+.checkboxInput {
+    appearance: none;
+    content: '\2713';
+    box-shadow: .3rem .3rem .6rem #c8d0e7,
+    -.2rem -.2rem .5rem #FFFFFF;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+}
+.checkboxInput:hover {
+    appearance: none;
+    box-shadow: inset .2rem .2rem .5rem #dddddd,
+    inset -.2rem -.2rem .5rem #dddddd;
+    background-color: #a4a4a4;
+    /*background-image: url("img/check-mark.svg");*/
+}
+.checkboxInput:checked {
+    appearance: none;
+    box-shadow: inset .2rem .2rem .5rem #7a7a7a,
+    inset -.2rem -.2rem .5rem #7a7a7a;
+    background-color: #434343;
+    /*background-image: url("img/check-mark.svg");*/
 }
 
-.spanClassName {
 
-}
+
+/*.checkboxLabel:before {*/
+/*    !*content: '\2713';*!*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: -4px;*/
+/*    left: 0;*/
+/*    width: 50px;*/
+/*    height: 26px;*/
+/*    border-radius: 13px;*/
+/*    background: #CDD1DA;*/
+/*    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);*/
+/*    transition: .2s;*/
+/*}*/
+/*.checkboxLabel:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: -2px;*/
+/*    left: 2px;*/
+/*    width: 22px;*/
+/*    height: 22px;*/
+/*    border-radius: 10px;*/
+/*    background: #FFF;*/
+/*    box-shadow: 0 2px 5px rgba(0,0,0,.3);*/
+/*    transition: .2s;*/
+/*}*/
+/*.checkboxInput:checked + .checkboxLabel:before {*/
+/*    background: #9FD468;*/
+/*}*/
+/*.checkboxInput:checked + .checkboxLabel:after {*/
+/*    left: 26px;*/
+/*}*/
+/*.checkboxInput:focus + .checkboxLabel:before {*/
+/*    box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);*/
+/*}*/
+/*.checkbox {*/
+/*    justify-content: center;*/
+/*    border: none;*/
+/*}*/
+
+/*.checkboxLabel {*/
+/*    box-shadow: .3rem .3rem .6rem #c8d0e7,*/
+/*    -.2rem -.2rem .5rem #FFFFFF;*/
+/*    cursor: pointer;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    border-radius: .5rem;*/
+/*    width: 2rem;*/
+/*    height: 2rem;*/
+/*    border: none;*/
+/*}*/
+
+/*.checkboxLabel:checked {*/
+/*    box-shadow: inset .2rem .2rem .5rem #c8d0e7,*/
+/*    inset -.2rem -.2rem .5rem #FFFFFF;*/
+/*    color: #6d5dfc;*/
+/*}*/

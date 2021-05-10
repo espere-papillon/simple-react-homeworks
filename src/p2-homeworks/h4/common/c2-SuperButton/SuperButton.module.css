@@ -1,7 +1,57 @@
-.default {
-
+/*  BUTTONS  */
+.btn {
+    height: 1.5rem;
+    min-width: 4rem;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #b8b8b8;
 }
 
-.red {
-    background: red;
+.btnPrimary {
+    background-color: #ff9595;
+    color: #434343;
+    box-shadow: inset .2rem .2rem 1rem #ffadad,
+    inset -.2rem -.2rem 1rem #fd2b2b,
+    .3rem .3rem .6rem #c8d0e7;
+}
+
+.btnPrimary:hover {
+    color: #FFFFFF;
+}
+
+.btnPrimary:active {
+    box-shadow: inset .2rem .2rem .5rem #fd2b2b,
+    inset -.2rem -.2rem .5rem #FFFFFF;
+}
+
+.btnSecondary {
+    background-color: #434343;
+    color: #FFFFFF;
+}
+
+.btnSecondary:hover {
+    color: #FFFFFF;
+}
+
+.btnSecondary:active {
+    box-shadow: inset .2rem .2rem .5rem #c8d0e7,
+    inset -.2rem -.2rem .5rem #FFFFFF;
+}
+.btnDisabled {
+    background-color: #7a7a7a;
+    color: #949494;
+}
+.btnDisabled:hover {
+    color: #949494;
 }
