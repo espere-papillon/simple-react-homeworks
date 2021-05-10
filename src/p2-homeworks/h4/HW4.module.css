@@ -11,3 +11,8 @@
 .testSpanError {
     color: blue;
 }
+.btn {
+    margin: .5rem;
+    height: 4rem;
+    width: 10rem;
+}

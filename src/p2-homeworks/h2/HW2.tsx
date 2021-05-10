@@ -79,7 +79,7 @@ function HW2() {
 
     const filteredAlternativeAffairs = filterAlternativeAffairs(alternativeAffairs, filterAlternative)
     const sortedAlternativeAffairs = sortAlternativeAffairs(filteredAlternativeAffairs, sortAlternative )
-    const deleteAlternativeAffairCallback = (_id: number) => setAffairs(deleteAlternativeAffair(alternativeAffairs, _id))
+    const deleteAlternativeAffairCallback = (_id: number) => setAlternativeAffairs(deleteAlternativeAffair(alternativeAffairs, _id))
 
     return (
         <div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import {AlternativeAffairType} from "./HW2";
 import styles from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AlternativeAffairPropsType = {
     counter: number
@@ -26,7 +27,8 @@ function AlternativeAffair(props: AlternativeAffairPropsType) {
                 <span className={styles.deadlineList}>{props.affair.deadline}</span>
                 {/*<span className={styles.priorityList}>{props.affair.priority}</span>*/}
             </li>
-            <button className={styles.deleteElementList} onClick={deleteCallback}>X</button>
+            {/*<button className={styles.deleteElementList} onClick={deleteCallback}>X</button>*/}
+            <SuperButton onClick={deleteCallback} className={styles.btn}>X</SuperButton>
         </>
     )
 }
