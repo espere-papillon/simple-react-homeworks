@@ -4,12 +4,12 @@ import HW2 from '../../h2/HW2'
 import HW3 from '../../h3/HW3'
 import HW4 from '../../h4/HW4'
 
-function PreJunior() {
+function Junior() {
     return (
         <div>
-            <HW1/>
+            {/*<HW1/>*/}
             {/*<HW2/>*/}
-            {/*<HW3/>*/}
+            <HW3/>
             {/*<HW4/>*/}
             {/*<HW6/>*/}
 
@@ -17,7 +17,7 @@ function PreJunior() {
     )
 }
 
-export default PreJunior
+export default Junior
 
 // сделайте по аналогии пустые страницы джун и джун+
 // туда будут добавляться следующие дз

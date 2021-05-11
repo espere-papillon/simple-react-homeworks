@@ -21,6 +21,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         if (nameValue) {
             setName(nameValue)
             setError('')
+        } else {
+            setName('')
+            setError('Error')
         }
     }
     const addUser = () => {
@@ -40,7 +43,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const onKeyPressAddUser = (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
             addUser()
-            setName('')
         }
     }
 
