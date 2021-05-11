@@ -7,16 +7,13 @@ import AlternativeMessage from './AlternativeMessage';
 const messageData = {
     avatar: avatar1,
     name: 'Mike',
-    message: 'Hello! ' +
-        'How are you?',
+    message: `Hello! <br> How are you?`,
     time: '22:52',
 }
 const alternativeMessageData = {
     avatar: avatar2,
     name: 'Nick',
-    message: 'Hello! ' +
-        'Not bad! ' +
-        'What about you?',
+    message: `Hello! <br> Not bad! <br> What about you?`,
     time: '23:45',
 }
 
