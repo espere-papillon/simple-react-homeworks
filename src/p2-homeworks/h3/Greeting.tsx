@@ -26,7 +26,9 @@ const Greeting: React.FC<GreetingPropsType> = (
                 value={name}
                 onChange={setNameCallback}
                 onKeyPress={onKeyPressAddUser}
-                // error={error}
+                onBlur={setNameCallback}
+                placeholder={error ? error : "Type anything..."}
+                error={error}
                 // spanClassName={s.testSpanError}
             />
             {/*<button className={styles.addUser} onClick={addUser} disabled={!name}>+</button>*/}
@@ -34,9 +36,9 @@ const Greeting: React.FC<GreetingPropsType> = (
                 +
             </SuperButton>
             <span className={styles.numberUsers}>Number of users: {totalUsers}</span>
-            <div>
-                <span className={styles.errorText}>{error}</span>
-            </div>
+            {/*<div>*/}
+            {/*    <span className={styles.errorText}>{error}</span>*/}
+            {/*</div>*/}
         </div>
     )
 }
