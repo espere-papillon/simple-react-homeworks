@@ -34,6 +34,11 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
                        className={finalInputClassName} {...restProps}/>
                 {children && <span className={s.checkboxText}>{children}</span>}
             </label>  {/* благодаря label нажатие на спан передастся в инпут*/}
+
+            <label className={s.container}>Two
+                <input type="checkbox"/>
+                    <span className={s.checkmark}></span>
+            </label>
         </div>
     )
 }
