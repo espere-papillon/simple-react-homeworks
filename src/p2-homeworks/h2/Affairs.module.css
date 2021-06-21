@@ -12,6 +12,7 @@
     position: relative;
     display: inline-block;
     line-height: 2rem;
+    height: 2rem;
     margin-left: 1.75rem;
     margin-bottom: .5rem;
     padding-left: 1rem;
@@ -48,16 +49,16 @@
 }
 .deleteElementList {
     width: 2.5rem;
-    height: 2.4rem;
     white-space: nowrap;
     border-radius: 25%;
-    line-height: 2rem;
+    line-height: 1.5rem;
     border: .25rem solid transparent;
     text-align: center;
-    background-color: #727272;
-    margin-left: .25rem;
+    margin-left: 1rem;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     padding-top: 0;
+    padding-bottom: 0;
 }
 .deleteElementList:focus {
     outline: none;
@@ -69,10 +70,11 @@
     line-height: 2rem;
     border: .25rem solid transparent;
     text-align: center;
-    background-color: #727272;
     margin-left: 1rem;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     padding-top: 0;
+    padding-bottom: 0;
 }
 .filterElementList:focus {
     outline: none;
@@ -84,10 +86,11 @@
     line-height: 2rem;
     border: .25rem solid transparent;
     text-align: center;
-    background-color: #727272;
     margin-left: 4rem;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     padding-top: 0;
+    padding-bottom: 0;
 }
 .sortElementList:focus {
     outline: none;

@@ -39,10 +39,10 @@ function AlternativeAffairs(props: AlternativeAffairPropsType) {
             {/*<button className={styles.filterElementList} onClick={setLow}>Low</button>*/}
 
             <div className={styles.allBtn}>
-                <SuperButton onClick={setAll} className={styles.btn}>All</SuperButton>
-                <SuperButton onClick={setHigh} className={styles.btn}>High</SuperButton>
-                <SuperButton onClick={setMiddle} className={styles.btn}>Middle</SuperButton>
-                <SuperButton onClick={setLow} className={styles.btn}>Low</SuperButton>
+                <SuperButton onClick={setAll} className={styles.filterElementList}>All</SuperButton>
+                <SuperButton onClick={setHigh} className={styles.filterElementList}>High</SuperButton>
+                <SuperButton onClick={setMiddle} className={styles.filterElementList}>Middle</SuperButton>
+                <SuperButton onClick={setLow} className={styles.filterElementList}>Low</SuperButton>
             </div>
 
             {mappedAlternativeAffairs}
@@ -51,8 +51,8 @@ function AlternativeAffairs(props: AlternativeAffairPropsType) {
             {/*<button className={styles.sortElementList} onClick={setDeadline}>Deadline</button>*/}
 
             <div className={styles.allBtn}>
-                <SuperButton onClick={setName} className={styles.btn}>Name</SuperButton>
-                <SuperButton onClick={setDeadline} className={styles.btn}>Deadline</SuperButton>
+                <SuperButton onClick={setName} className={styles.sortElementList}>Name</SuperButton>
+                <SuperButton onClick={setDeadline} className={styles.sortElementList}>Deadline</SuperButton>
             </div>
 
 
