@@ -23,7 +23,7 @@ function AlternativeAffair(props: AlternativeAffairPropsType) {
         <>
             <li style={elementList} className={styles.elementList}>
                 <span style={numberList} className={styles.numberList}>{props.counter}</span>
-                <span className={styles.textList}>{props.affair.name}</span>
+                <span className={styles.elementList}>{props.affair.name}</span>
                 <span className={styles.deadlineList}>{props.affair.deadline}</span>
                 {/*<span className={styles.priorityList}>{props.affair.priority}</span>*/}
             </li>

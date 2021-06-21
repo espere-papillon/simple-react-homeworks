@@ -23,7 +23,7 @@ function Affair(props: AffairPropsType) {
         <>
             <li style={elementList} className={styles.elementList}>
                 <span style={numberList} className={styles.numberList}>{props.affair._id}</span>
-                <span className={styles.textList}>{props.affair.name}</span>
+                <span className={styles.elementList}>{props.affair.name}</span>
                 <span className={styles.deadlineList}>{props.affair.priority}</span>
             </li>
             {/*<button className={styles.deleteElementList} onClick={deleteCallback}>X</button>*/}

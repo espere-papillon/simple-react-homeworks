@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import styles from './HW8.module.css'
+import AlternativeSuperEditableSpan from "../h6/common/c4-SuperEditableSpan/AlternativeSuperEditableSpan";
+import SuperEditableSpan from "../h6/common/c4-SuperEditableSpan/SuperEditableSpan";
 
 export type UserType = {
     _id: number
@@ -23,9 +25,9 @@ function HW8() {
 
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
-        <div key={p._id}>
-            <span>{p.name}</span>
-            <span>{p.age}</span>
+        <div key={p._id} className={styles.user}>
+            <span className={styles.name}>{p.name}</span>
+            <span className={styles.age}>{p.age}</span>
         </div>
     ))
 
@@ -39,7 +41,9 @@ function HW8() {
             homeworks 8
 
             {/*should work (должно работать)*/}
-            {finalPeople}
+            <div className={styles.usersBlock}>
+                {finalPeople}
+            </div>
 
             <div className={styles.allBtn}>
                 <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
