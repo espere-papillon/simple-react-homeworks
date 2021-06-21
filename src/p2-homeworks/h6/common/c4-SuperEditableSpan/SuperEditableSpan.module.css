@@ -17,7 +17,7 @@
     line-height: 4rem;
     text-align: center;
     margin: .6rem .77rem .75rem .6rem;
-    background: url("./img/clipboard.svg") no-repeat 5%;
+    background: url("./img/clipboard.svg") no-repeat 5% #e8e8e8;
     background-size: 10%;
     -webkit-user-select: none;
 }
