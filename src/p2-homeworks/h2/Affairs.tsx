@@ -30,10 +30,10 @@ function Affairs(props: AffairsPropsType) {
         <div className={styles.form}>
 
             <div className={styles.allBtn}>
-            <SuperButton onClick={setAll} className={styles.btn}>All</SuperButton>
-            <SuperButton onClick={setHigh} className={styles.btn}>High</SuperButton>
-            <SuperButton onClick={setMiddle} className={styles.btn}>Middle</SuperButton>
-            <SuperButton onClick={setLow} className={styles.btn}>Low</SuperButton>
+            <SuperButton onClick={setAll} className={styles.filterElementList}>All</SuperButton>
+            <SuperButton onClick={setHigh} className={styles.filterElementList}>High</SuperButton>
+            <SuperButton onClick={setMiddle} className={styles.filterElementList}>Middle</SuperButton>
+            <SuperButton onClick={setLow} className={styles.filterElementList}>Low</SuperButton>
             </div>
 
             {mappedAffairs}

@@ -27,7 +27,7 @@ function Affair(props: AffairPropsType) {
                 <span className={styles.deadlineList}>{props.affair.priority}</span>
             </li>
             {/*<button className={styles.deleteElementList} onClick={deleteCallback}>X</button>*/}
-            <SuperButton onClick={deleteCallback}>X</SuperButton>
+            <SuperButton onClick={deleteCallback} className={styles.deleteElementList}>X</SuperButton>
         </>
     )
 }
