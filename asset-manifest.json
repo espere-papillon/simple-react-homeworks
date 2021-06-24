@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simple-react-homeworks/static/css/main.703ed121.chunk.css",
+    "main.js": "/simple-react-homeworks/static/js/main.0a0ec10f.chunk.js",
+    "main.js.map": "/simple-react-homeworks/static/js/main.0a0ec10f.chunk.js.map",
+    "runtime-main.js": "/simple-react-homeworks/static/js/runtime-main.f59815ab.js",
+    "runtime-main.js.map": "/simple-react-homeworks/static/js/runtime-main.f59815ab.js.map",
+    "static/js/2.b5fd5ada.chunk.js": "/simple-react-homeworks/static/js/2.b5fd5ada.chunk.js",
+    "static/js/2.b5fd5ada.chunk.js.map": "/simple-react-homeworks/static/js/2.b5fd5ada.chunk.js.map",
+    "index.html": "/simple-react-homeworks/index.html",
+    "precache-manifest.7b39bb4d15ecec380eed21b741ce63db.js": "/simple-react-homeworks/precache-manifest.7b39bb4d15ecec380eed21b741ce63db.js",
+    "service-worker.js": "/simple-react-homeworks/service-worker.js",
+    "static/css/main.703ed121.chunk.css.map": "/simple-react-homeworks/static/css/main.703ed121.chunk.css.map",
+    "static/js/2.b5fd5ada.chunk.js.LICENSE.txt": "/simple-react-homeworks/static/js/2.b5fd5ada.chunk.js.LICENSE.txt",
+    "static/media/SuperEditableSpan.module.css": "/simple-react-homeworks/static/media/clipboard.3092fb3d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f59815ab.js",
+    "static/js/2.b5fd5ada.chunk.js",
+    "static/css/main.703ed121.chunk.css",
+    "static/js/main.0a0ec10f.chunk.js"
+  ]
+}
